@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  //array creation
+  let fir=["one","two","three"];
+   //array manipulation
+   let firs=["one","two","three"];
+   firs.push("four");
+   console.log(firs);
+
+   firs.unshift("five","six");
+   console.log(firs);
+
+   firs.pop("five");
+   console.log(firs);
+       firs.shift();
+       console.log(firs);
+
+  
+
+  //array searching
+
+  let arrr=["ronald","koeman","trump","biden","rishi","sunak"];
+  console.log(arrr.indexOf("trump"));
+
+  console.log(arrr.includes("biden"));
+
+  // array filtering
+
+  let ages= [32, 33, 16, 40];
+ let  res = ages.filter(Adult);
+
+function Adult(age)
+ {
+  return age >= 18;
+}
+console.log(res);
+
+// Array mappping
+
+let numbers = [6, 4, 102, 12];
+let Arr = numbers.map(Func)
+
+function Func(num) {
+  return num * 9;
+}
+console.log(Arr);
+
+// array sorting
+
+let ari=[7,0,1,6,5];
+
+console.log(ari.sort());
+
+
+
+
+
+
+  
+
+
+    </script>
+</body>
+</html>
